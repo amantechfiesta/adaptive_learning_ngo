@@ -1,65 +1,96 @@
-# Peer Learning Matchmaking System 🎓🤝
+# 🤝 Sahay: Peer Learning Matchmaking System
+### **Team: The Semicolon**
 
-A Streamlit-based hackathon prototype that enables adaptive peer learning
-for NGO and college students by intelligently pairing mentors and mentees
-based on strengths, weaknesses, and availability.
-
----
-
-## 🚩 Problem Statement
-Many NGO and college students face:
-- Limited access to qualified teachers
-- Diverse learning levels in the same classroom
-- Lack of personalized learning support
-
-Traditional one-size-fits-all teaching methods leave learning gaps unaddressed.
+**Sahay** is an adaptive learning platform designed to bridge the educational gap for NGO students by intelligently pairing peer mentors and mentees based on subject strengths and weaknesses.
 
 ---
 
-## 💡 Our Solution
-We built a **Peer Learning Matchmaking System** that:
-- Collects student skill profiles
-- Matches mentors and mentees based on subject strengths and weaknesses
-- Creates a collaborative learning session
-- Encourages mentors through ratings, credits, and badges
+## 🧐 The Problem
+NGO students face several critical challenges in their learning journey:
+* **High Student-Teacher Ratio:** Many NGOs operate with an average ratio of 1:40, making personalized support nearly impossible.
+* **Widening Learning Gaps:** Because students learn at different speeds, traditional methods often leave many behind.
+* **Low Digital Literacy:** Approximately 60-80% of rural students struggle with digital tools.
 
-The system is designed to be **simple, scalable, and motivating**.
+## 💡 The Solution
+Our platform enables structured **Peer-to-Peer learning**:
+* **Skill Profiling:** We capture what a student is "Good At" and what they "Need Help" with.
+* **Rule-Based Matching:** A Python algorithm finds the best mentor-mentee combination.
+* **Gamified Motivation:** Mentors earn reward points, badges, and credits for successful sessions.
 
----
+## ⚙️ How It Works (Solution Flow)
 
-## ⚙️ How the System Works
-1. User selects role (Student / Teacher)
-2. Students enter:
-   - Academic year
-   - Strong and weak subjects
-   - Available time slot
-3. System runs a matching algorithm
-4. Best mentor–mentee pair is found
-5. Learning session begins (chat, AI helper, faculty option – prototype)
-6. Mentee rates mentor after the session
+```mermaid
+graph TD;
+    A[Student Enters Data] --> B{Matching Algorithm};
+    B --> C[Find Peer Match];
+    C --> D[Schedule Session];
+    D -.->|Future Feature| E[WhatsApp Reminder Sent];
+    D -.->|Future Feature| F[Video Call Link Generated];
+    B -.->|No Match Found| G[AI Chatbot Support];
+```
+1. **Role Setup:** Users select their role (Student/Teacher) and enter their academic year.
 
----
+2. **Skill Input:** Students detail their subject strengths and weaknesses.
 
-## 🎮 Key Features
-- Role-based profile setup (Student / Teacher)
-- Year-wise student classification (FY, SY, TY, Fourth Year)
-- Skill-based mentor–mentee matchmaking
-- Gamified matching experience
-- Learning session interface
-- AI helper & faculty escalation (prototype)
-- Rating-based mentor rewards
+3. **Profile Analysis:** The system converts entries into structured learner profiles.
+   
+4. **Watching Logic:** The Python backend compares data to find the best pairs using compatibility scores.
 
----
+5. **Dashboard Display:** Recommended pairs appear on the Streamlit UI for review.
+
+6. **Reward System:** Mentors receive XP points and badges upon session completion.
+
+
+## 🚀 Future Scope
+
+Our roadmap to scale this project includes:
+
+* **🤖 AI Tutor Chatbot:** 24/7 AI-powered support when a human mentor is unavailable.
+* **📲 WhatsApp Integration:** Automated session reminders and progress reports sent via WhatsApp.
+* **📹 Built-in Video Call:** Secure, remote peer-learning rooms for remote students.
+* **🎙️ Voice-Enabled Input:** Helping younger students navigate the app easily.
+
 
 ## 🛠️ Tech Stack
-- Python
-- Streamlit
-- GitHub (version control)
-- Streamlit Community Cloud (deployment)
+
+* **Frontend:** Streamlit 
+* **Language:** Python 
+* **Version Control:** GitHub 
+---
+## 💻 How to Run Locally
+
+Follow these steps to set up the **Sahay** prototype on your computer:
+
+1. **Clone the repository:**
+
+```bash
+git clone [Paste Your Repo Link Here]
+
+```
+
+2. **Install dependencies:**
+
+```bash
+pip install streamlit
+
+```
+
+3. **Run the application:**
+
+```bash
+streamlit run app.py
+
+```
+
+4. **Access the App:** Open your browser and go to `http://localhost:8501`.
 
 ---
 
-## 🚀 How to Run Locally
-```bash
-pip install streamlit
-streamlit run app.py
+## 👥 Team: The Semicolon
+
+* **Srushti Kalokhe** 
+* **Swarali Warade** 
+* **Nikita Sharma** 
+* **Tanieeshka Sonawane** 
+* **Anushka Dhane** 
+
