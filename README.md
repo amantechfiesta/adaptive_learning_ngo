@@ -40,6 +40,19 @@ graph TD;
 
 6. **Reward System:** Mentors receive XP points and badges upon session completion.
 
+## 📸 App Screenshots
+
+### 🎯 1. Smart Match Found
+Our algorithm intelligently pairs a Mentor with a Mentee based on complementary subject strengths and compatibility scores.
+![Smart Match Found](match_found.jpg)
+
+### 💬 2. Interactive Learning Session
+The session interface features a prototype chat, resource sharing, and future-ready buttons for AI support and Video calls.
+![Learning Session](session_ui.jpg)
+
+### 🏆 3. Leaderboard & Gamification
+To keep students motivated, we use a reward system where mentors earn points, badges, and rank on a real-time leaderboard.
+![Leaderboard and Rewards](leaderboard.jpg)
 
 ## 🚀 Future Scope
 
@@ -93,5 +106,6 @@ streamlit run app.py
 * **Nikita Sharma** 
 * **Tanieeshka Sonawane** 
 * **Anushka Dhane** 
+
 
 
