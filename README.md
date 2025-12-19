@@ -64,7 +64,7 @@ Follow these steps to set up the **Sahay** prototype on your computer:
 1. **Clone the repository:**
 
 ```bash
-git clone [Paste Your Repo Link Here]
+git clone https://github.com/GitBeat16/adaptive_learning_ngo
 
 ```
 
@@ -93,4 +93,5 @@ streamlit run app.py
 * **Nikita Sharma** 
 * **Tanieeshka Sonawane** 
 * **Anushka Dhane** 
+
 
